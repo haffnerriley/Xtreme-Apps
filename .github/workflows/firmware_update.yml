@@ -2,6 +2,14 @@ name: Firmware_Update
 on:
   push:
     branches: [ dev ]
+    paths:
+      - "**.c"
+      - "**.h"
+      - "**.bin"
+      - "**.inc"
+      - "**.fam"
+      - "**/assets/**"
+
 jobs:
   build:
     runs-on: ubuntu-latest
